@@ -1,0 +1,124 @@
+
+body
+{
+	background-color: black;
+	color: white;
+	font-family: Courier New;
+}
+
+.background-slideshow
+{ 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.about
+{
+	font-size: 20px;
+	overflow-x: wrap;
+}
+
+
+.finder
+{
+    position: absolute;
+    margin-top:100px;
+    z-index:10;
+    margin-left: 5%;
+    font-size: 40px;
+    background-color: black;
+    opacity: 80%;
+    border-radius: 15px;
+    text-align: center;
+    width: 30%;
+}
+
+#artist_input
+{
+	width: 100%;
+	text-align: center;
+	text-shadow: grey 6px 6px 6px;
+	outline: none;
+}
+
+#artist_submit
+{
+	width: 100%;
+	
+}
+
+.output
+{
+	margin-top:100px;
+	z-index:10;
+    margin-left: 5%;
+    font-size: 40px;
+    background-color: black;
+    opacity: 90%;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    display: none;
+
+}
+
+.background-slideshow li span { 
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 25s linear infinite 0s; 
+}
+
+.background-slideshow li:nth-child(1) span { 
+    background-image: url(./images/1.jpg) 
+}
+.background-slideshow li:nth-child(2) span { 
+    background-image: url(./images/2.jpg);
+    animation-delay: 5s; 
+}
+.background-slideshow li:nth-child(3) span { 
+    background-image: url(./images/3.jpg);
+    animation-delay: 10s; 
+}
+.background-slideshow li:nth-child(4) span { 
+    background-image: url(./images/4.jpg);
+    animation-delay: 15s; 
+}
+.background-slideshow li:nth-child(5) span { 
+    background-image: url(./images/5.jpg);
+    animation-delay: 20s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    10% { opacity: 1; animation-timing-function: ease-out; }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.header
+{
+	margin-left: 20px;
+	font-size: 60px;
+	text-shadow: grey 6px 6px 6px;
+}
+
+.navbar-brand
+{
+	font-size: 50px;
+	margin-left: 30px;
+}
+
